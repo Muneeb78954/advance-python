@@ -1,0 +1,10 @@
+adjective1 = input("Enter an adjective(Description): ")
+noun1 = input("Enter a noun(Person, Place, Thing): ")
+adjective2 = input("Enter another adjective (Description): ")
+verb1 = input("Enter a verb ending with 'ing': ")
+adjective3 = input("Enter a final adjective (Description): ")
+
+print(f"I went to to a {adjective1} zoo.")
+print(f"In an exhibit i saw a {noun1}.")
+print(f"{noun1} was {adjective2} and {verb1}.")
+print(f"I was {adjective3}!.")
