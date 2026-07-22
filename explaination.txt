@@ -1,0 +1,12 @@
+aik majooda list mein sy new list banana = list comprehension
+
+agar hum koi function single line mein likhna chahy toh use = lambda function
+
+lambda function ko annonymus function bhi kehty han
+
+map function kisi bhi list k elements pr operations perform kerny ka short cut method hai 
+filter functions simply kisi bhi list mein sy values filter krta hai based on condition 
+reduce function basically kisi bhi list ki values ko reduce kr sakta hai acoording given operation 
+
+typecasting kisi bhi data type ko change krny k liye use hota hai str(), bool(), int(), float()
+
