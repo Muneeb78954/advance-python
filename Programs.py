@@ -22,3 +22,20 @@ while True:
     else:
         print("Item not found. Please choose from the available items.")
 print(f"Your total purchase amount is: ${total_price:.2f}. Thank you  for shopping with us!")
+
+"""Data Validation"""
+username = input("Enter Your username: ")
+
+user_length = len(username)
+
+check_spaces = username.find(" ")
+
+dig_check = username.isalpha()
+
+if user_length > 12 or check_spaces != -1 or  dig_check == False:
+    print("Please Enter A Valid Username.")
+    print("1. Username should not exceed 12 characters\n2. Should not contain spaces\n3. Should only contain letters.")
+else:
+    print(f"Username is valid. Welcome! {username}")
+
+

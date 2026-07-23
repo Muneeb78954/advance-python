@@ -88,3 +88,8 @@ print(math.e)
 print(math.factorial(5))
 print(math.ceil(x))
 print(math.floor(x))
+
+#ternary operator
+age = 18
+status = "Adult" if age >= 18 else "Minor"
+print(status)
