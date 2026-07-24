@@ -43,13 +43,13 @@ print("______________________________")
 
 print("Correct Answers: ", end = " ")
 for answer in answers:
-    print("Answers: ", end = " ")
+    print(answer, end = " ")
 
 print()
 
 print("Your Guesses: ", end = " ")
-for answer in answers:
-    print("Guesses: ", end = " ")
+for guess in guesses:
+    print(guess, end = " ")
 print()
 
 score = int(len(questions) * 100 )
