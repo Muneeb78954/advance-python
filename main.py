@@ -111,3 +111,8 @@ print(math.floor(x))
 age = 18
 status = "Adult" if age >= 18 else "Minor"
 print(status)
+
+
+tup = (("BoB", "RoB"), ("Chachu", "Mamu"))
+
+tup[1]
