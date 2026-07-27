@@ -1,14 +1,19 @@
-# eliminate the need of number of arguments 
-def add(*args):
-    total = 0
-    for arg in args:
-        total += arg
-    return total
-print(add(2,3,4,5,6,67,7))
-
-def address(**kwargs):
-    for key , values in kwargs.items():
-        print(f"{key}: {values}")
-
-address(street = "123 LA", province ="Punjab", city ="Lahore")
-                 
+def day_of_week(day):
+    match day:
+        case 1:
+            return "It is Monday!"
+        case 2:
+            return "It is Tuesday!"
+        case 3:
+            return "It is Wednesday!"
+        case 4:
+            return "It is Thursday!"
+        case 5:
+            return "It is Friday!"
+        case 6: 
+            return "It is Satureday!"
+        case 7:
+            return "It is Sunday!"
+        case _:
+            return "It is not a valid day!"
+day_of_week(7)
