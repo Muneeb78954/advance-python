@@ -1,30 +1,31 @@
-import random
-import string
+class car:
+    def __init__(self, model, year, color, engine, speed, for_sale, price):
+        self.model = model
+        self.year = year
+        self.color = color 
+        self.engine = engine
+        self.speed = speed
+        self.for_sale = for_sale 
+        self.price = price
 
-char = " " + string.punctuation + string.digits + string.ascii_letters 
-char = list(char)
+    def drive(self):
+        print(f"You Drive The {self.color} {self.model}!")
 
-key = char.copy()
-random.shuffle(key)
+    def stop(self):
+        print(f"You Stop The {self.color} {self.model}!")
 
-# Encryption
-plain_text = input("Enter a message to decrypt: ")
-cipher_text = " "
+    def describe(self):
+        print(f"{self.year} {self.color} {self.model}")
 
-for letter in plain_text:
-    index = char.index(letter)
-    cipher_text += key[index]
+car1 = car("Bughati", 2025, "Carbon Black", "V12", "235 Km/h", False, "$1.33M")
+car2 = car("Mercedes", 2026, "Silver", "V8", "195 Km/h", False, "$145K")
+car3 = car("BMW", 2026, "Red", "V8", "160 Km/h", False, "$90k")
 
-print(f"Original message: {plain_text}")
-print(f"Encrypted message: {cipher_text}")
+print(car1.model)
+print(car2.price)
 
-# Decryption
-cipher_text = input("Enter a message to encrypt: ")
-plain_text = " "
+car1.drive()
+car1.stop()
 
-for letter in cipher_text:
-    index = key.index(letter)
-    plain_text += char[index]
+car3.describe()
 
-print(f"Encrypted message: {cipher_text}")
-print(f"Original message: {plain_text}")
