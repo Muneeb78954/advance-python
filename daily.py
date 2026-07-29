@@ -23,6 +23,8 @@ lion = Mammals("Lion", "Mammal")
 sparrow = Birds("Sparrow", "Bird")
 snake = Reptiles("Snake", "Reptile")
 
+print(lion.name)
+
 lion.sound()
 sparrow.sound()
 snake.sound()
